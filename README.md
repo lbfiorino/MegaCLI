@@ -61,3 +61,28 @@ MegaCli64 -h
 MegaCli -h
 megacli -h
 ```
+
+## Useful Commands
+
+### Check Virtual Drive Information
+```bash
+/opt/MegaRAID/MegaCli/MegaCli64 -LDInfo -Lall -aALL
+```
+
+### Check Volumes
+```bash
+
+```
+
+### Check all physical disks
+```bash
+/opt/MegaRAID/MegaCli/MegaCli64 -PDList -aALL
+```
+
+### Check rebuild progress
+```bash
+# /opt/MegaRAID/MegaCli/MegaCli64 -PDRbld -ShowProg -PhysDrv [Enclosure Device ID:Slot Number] -aAll
+/opt/MegaRAID/MegaCli/MegaCli64 -PDRbld -ShowProg -PhysDrv [32:7] -aAll
+# or
+/opt/MegaRAID/MegaCli/MegaCli64 -PDRbld -ProgDsply -PhysDrv [32:7] -aAll
+```
