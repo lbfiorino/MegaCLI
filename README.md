@@ -69,9 +69,9 @@ megacli -h
 /opt/MegaRAID/MegaCli/MegaCli64 -LDInfo -Lall -aALL
 ```
 
-### Check Volumes
+### Check physical disks errors
 ```bash
-
+/opt/MegaRAID/MegaCli/MegaCli64 -PhyErrorCounters -aAll
 ```
 
 ### Check all physical disks
